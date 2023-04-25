@@ -1,0 +1,64 @@
+﻿<!--  Set the FontSize property to 48  -->
+<Window x:Name="ApplicationMainWindow"
+    x:Class="SimpleWpfWindowDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    SizeToContent="WidthAndHeight"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <BitmapImage x:Key="HelpIcon"
+            UriSource="Resources/HelpApplication.png" />
+    </Window.Resources>
+
+    <StackPanel x:Name="LayoutRoot"
+        Background="Green"
+        Orientation="Vertical">
+        <Label x:Name="DemoTitleLabel"
+            FontSize="24">
+            Simple WPF Demo Application
+        </Label>
+        <TextBox x:Name="DemoTextTextBox">
+            This is a TextBox that contains some demo text.
+        </TextBox>
+        <ListBox>
+            <ListBoxItem>This is a list box item.</ListBoxItem>
+            <ListBoxItem>This is another list box item.</ListBoxItem>
+        </ListBox>
+        <Grid x:Name="ButtonsPanel">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="OkButtonColumn"
+                    Width="*" />
+                <ColumnDefinition x:Name="HelpButtonColumn"
+                    Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="OkButton"
+                Grid.Column="0">
+                OK
+            </Button>
+            <Button x:Name="HelpButton"
+                Grid.Column="1">
+                <StackPanel x:Name="HelpButtonPanel"
+                    Orientation="Horizontal">
+                    <Image
+                        Source="{StaticResource HelpIcon}" />
+                    <Label>Help</Label>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <StatusBar>
+            <StatusBarItem>
+                <Label>This demo is successfully presented.</Label>
+            </StatusBarItem>
+            <StatusBarItem>
+                <Button>This is a button.</Button>
+            </StatusBarItem>
+        </StatusBar>
+    </StackPanel>
+</Window>
