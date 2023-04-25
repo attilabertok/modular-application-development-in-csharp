@@ -1,12 +1,12 @@
 ﻿<!--  Set the FontSize property to 48  -->
 <Window x:Name="ApplicationMainWindow"
-    x:Class="SimpleWpfWindowDemo.MainWindow"
+    x:Class="DependencyPropertyDemo.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:SimpleWpfWindowDemo"
+    xmlns:local="clr-namespace:DependencyPropertyDemo"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:simpleWpfWindowDemo="clr-namespace:SimpleWpfWindowDemo"
+    xmlns:simpleWpfWindowDemo="clr-namespace:DependencyPropertyDemo"
     Title="MainWindow"
     Width="800"
     Height="450"
@@ -16,6 +16,13 @@
     <Window.Resources>
         <BitmapImage x:Key="HelpIcon"
             UriSource="Resources/HelpApplication.png" />
+
+        <Style
+            BasedOn="{StaticResource {x:Type TextBox}}"
+            TargetType="{x:Type local:MyTextBox}">
+            <Setter Property="Background" Value="LightSalmon" />
+            <Setter Property="Foreground" Value="Blue" />
+        </Style>
     </Window.Resources>
 
     <StackPanel x:Name="LayoutRoot"
@@ -25,6 +32,10 @@
             FontSize="24">
             Simple WPF Demo Application
         </Label>
+        <simpleWpfWindowDemo:MyTextBox
+            DefaultText="whatever">
+            dummy text
+        </simpleWpfWindowDemo:MyTextBox>
         <TextBox x:Name="DemoTextTextBox">
             This is a TextBox that contains some demo text.
         </TextBox>

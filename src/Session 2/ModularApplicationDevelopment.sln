@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlignmentDemo", "AlignmentD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - WPF Overview", "01 - WPF Overview", "{9480B549-7EBD-455E-B4FB-50E8AD1555DC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Dependency Properties", "03 - Dependency Properties", "{22F33099-7B0E-42BB-A57B-9E2A5EEED263}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-02 - Dependency Properties", "03-02 - Dependency Properties", "{22F33099-7B0E-42BB-A57B-9E2A5EEED263}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Rendering", "05 - Rendering", "{54DD011D-374D-404C-ABF6-F4BF9AB88465}"
 EndProject
@@ -32,6 +32,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-04 - Visibility", "05-04 - Visibility", "{F290C610-F058-4331-80C9-730E27E0A384}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-05 - Alignment", "05-05 - Alignment", "{13D5EF9D-355E-4D01-910B-0EC51F48FF09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Dependency Properties", "03 - Dependency Properties", "{48CB11E4-9134-4362-8F56-C6EA4CA4299E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyPropertyDemo", "DependencyPropertyDemo\DependencyPropertyDemo.csproj", "{B8EAFB84-A30A-4078-8784-E23CC8212CDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,10 @@ Global
 		{156A0EA0-7EAA-4DF2-B0A9-65CB19205D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{156A0EA0-7EAA-4DF2-B0A9-65CB19205D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{156A0EA0-7EAA-4DF2-B0A9-65CB19205D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8EAFB84-A30A-4078-8784-E23CC8212CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8EAFB84-A30A-4078-8784-E23CC8212CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8EAFB84-A30A-4078-8784-E23CC8212CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8EAFB84-A30A-4078-8784-E23CC8212CDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,8 @@ Global
 		{25B81298-8CEF-4EC3-8BAE-BE2FF5801BE0} = {99D80054-D836-4E56-9559-77F79B89C5B8}
 		{F290C610-F058-4331-80C9-730E27E0A384} = {99D80054-D836-4E56-9559-77F79B89C5B8}
 		{13D5EF9D-355E-4D01-910B-0EC51F48FF09} = {99D80054-D836-4E56-9559-77F79B89C5B8}
+		{48CB11E4-9134-4362-8F56-C6EA4CA4299E} = {99D80054-D836-4E56-9559-77F79B89C5B8}
+		{B8EAFB84-A30A-4078-8784-E23CC8212CDB} = {48CB11E4-9134-4362-8F56-C6EA4CA4299E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB861058-4C88-4A71-9BC5-85B816B6468B}
